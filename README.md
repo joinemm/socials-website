@@ -1,4 +1,3 @@
-# joinemm.github.io
-my cool website     
+# Personal website 
 
-http://joinemm.me
+https://joinemm.me
