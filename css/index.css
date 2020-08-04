@@ -1,21 +1,27 @@
 .social-button {
     display: inline-block;
+    margin: 0.5rem;
+}
+
+#content-container {
+    max-width: 7em;
     font-size: 72px;
-    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@media (max-width: 480px) {
-    .main {
-        width: 100vw;
-    }
-}
-
-@media (min-width: 481px) {
-    .main {
-        width: 480px;
+@media (max-height: 480px) {
+    #content-container {
+        max-width: 11em;
     }
 }
 
 .fa-fw {
     vertical-align: -13%;
+}
+
+.footer {
+    color: #4b4b4b;
 }

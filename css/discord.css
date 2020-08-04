@@ -2,8 +2,9 @@ body {
     background-color: #23272A;
 }
 
-.main {
-    height: 120px;
+.content {
+    min-height: 120px;
+    max-height: 350px;
     background: #7289da;
     border-radius: 8px;
     overflow: hidden;
@@ -13,22 +14,25 @@ body {
 }
 
 .header {
-    width: 600px;
+    width: 80vw;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     -webkit-box-align: center;
+    max-width: 600px;
 }
 
 .headerfill {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: #2f3136;
     flex-grow: 1;
-    padding: 20px;
-    vertical-align: baseline;
     text-align: left;
+    padding-bottom: 5px;
 }
 
 .infoheader {
+    padding-left: 20px;
+    padding-top: 20px;
     color: #fff;
     margin-bottom: 8px;
     font-weight: bold;
@@ -44,7 +48,6 @@ body {
 }
 
 .nametag {
-    word-break: break-word;
     line-height: 20px;
     flex-wrap: wrap;
     white-space: normal;
@@ -80,17 +83,17 @@ body {
 
 .copybutton {
     pointer-events: auto;
-    outline: 0;
     -webkit-user-select: none;
     justify-content: center;
     position: relative;
     height: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: auto;
     background-color: #fff;
     color: #7289da;
     border-radius: 3px;
     border: none;
-    box-sizing: border-box;
     line-height: 16px;
     padding: 2px 16px;
     cursor: pointer;
@@ -112,6 +115,51 @@ body {
     font-weight: bold;
 }
 
-footer {
+.servers {
+    overflow: hidden auto;
+    padding: 8px 0;
+    max-height: 175px;
+}
+
+.listrow {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    padding: 4px 11px;
+    border-radius: 4px;
+    margin: 1px 0 1px 8px;
+    vertical-align: baseline;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    background-position: 50%;
+    background-size: 100% 100%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.listrow-content {
+    vertical-align: baseline;
+    overflow: hidden;
+    color: #dcddde;
+}
+
+.servername {
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.invite-link {
+    font-size: 11px;
+    line-height: 13px;
+    color: #b9bbbe;
+}
+
+.footer {
     color: #8e9297;
 }
