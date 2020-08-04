@@ -1,0 +1,21 @@
+.social-button {
+    display: inline-block;
+    font-size: 72px;
+    margin: 10px;
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 481px) {
+    .main {
+        width: 480px;
+    }
+}
+
+.fa-fw {
+    vertical-align: -13%;
+}

@@ -1,0 +1,94 @@
+a.social-button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #4b4b4b;
+    color: #4b4b4b;
+    border-radius: 20%;
+    padding: 0.25em;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+a.social-button:hover {
+    border-color: transparent;
+}
+
+a.social-button.icon-facebook:hover {
+    background-color: #3b5998;
+}
+
+a.social-button.icon-twitter:hover {
+    background-color: #4dc8f1;
+}
+
+a.social-button.icon-instagram:hover {
+    background-color: #c32aa3;
+}
+
+a.social-button.icon-youtube:hover {
+    background-color: #ff0000;
+}
+
+a.social-button.icon-linkedin:hover {
+    background-color: #007bb5;
+}
+
+a.social-button.icon-github:hover {
+    background-color: #333;
+}
+
+a.social-button.icon-discord:hover {
+    background-color: #7289DA;
+}
+
+a.social-button.icon-spotify:hover {
+    background-color: #1ed760;
+}
+
+a.social-button.icon-battle-net:hover {
+    background-color: #ace5ee;
+}
+
+a.social-button.icon-paypal:hover {
+    background-color: #0079C1;
+}
+
+a.social-button.icon-steam:hover {
+    background-color: #171A21;
+}
+
+a.social-button.icon-twitch:hover {
+    background-color: #9146ff;
+}
+
+a.social-button.icon-patreon:hover {
+    background-color: #f96854;
+}
+
+a.social-button.icon-deviantart:hover {
+    background-color: #05cc47;
+}
+
+a.social-button.icon-artstation:hover {
+    background-color: #13aff0;
+}
+
+a.social-button:hover {
+    color: #FFF;
+}
+
+a.social-button {
+    transition-timing-function: cubic-bezier(0.25, .46, .45, .94);
+    transition-property: background-color, transform;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, .46, .45, .94);
+    -webkit-transition-property: background-color, transform;
+    -webkit-transition-duration: .3s;
+    -o-transition-timing-function: cubic-bezier(0.25, .46, .45, .94);
+    -o-transition-property: background-color, transform;
+    -o-transition-duration: .3s;
+    -moz-transition-timing-function: cubic-bezier(0.25, .46, .45, .94);
+    -moz-transition-property: background-color, transform;
+    -moz-transition-duration: .3s;
+}
