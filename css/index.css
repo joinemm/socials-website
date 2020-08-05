@@ -1,7 +1,7 @@
 :root {
     --bg-color: #fff;
     --text-color: #4b4b4b;
-    --button-color: #4b4b4b;
+    --button-color: #f6bd60;
 }
 
 [data-theme="dark"] {
@@ -36,8 +36,15 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    #content-container {
+        font-size: 54px;
+    }
+}
+
 .fa-fw {
-    vertical-align: -13%;
+    height: 1em;
+    width: 1em !important;
 }
 
 #header-container {
@@ -84,7 +91,7 @@ body {
 }
 
 .slider:before {
-    background-color: #f6bd60;
+    background-color: var(--button-color);
     bottom: 4px;
     content: "";
     height: 22px;
@@ -110,6 +117,7 @@ input:checked+.slider:before {
 
 .name {
     margin: 30px;
+    font-size: 18px;
 }
 
 .footer {

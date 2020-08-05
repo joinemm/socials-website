@@ -1,11 +1,12 @@
 a.social-button {
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: grid;
+    place-items: center;
     border-radius: 20%;
     padding: 0.25em;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 a.social-button:hover {
