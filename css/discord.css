@@ -6,11 +6,11 @@ body {
     min-height: 120px;
     max-height: 350px;
     background: #7289da;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-flow: column;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -37,8 +37,8 @@ body {
     margin-bottom: 8px;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 15px;
 }
 
 .userinfo {
@@ -57,13 +57,14 @@ body {
 }
 
 .username {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .discriminator {
-    font-size: 14px;
+    font-size: 16px;
     opacity: .6;
+    line-height: 20px;
 }
 
 .avatar {
@@ -71,8 +72,8 @@ body {
     object-fit: cover;
     overflow: hidden;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 96px;
+    height: 96px;
 }
 
 .avatar img {
@@ -91,11 +92,11 @@ body {
     margin-bottom: 20px;
     width: auto;
     background-color: #fff;
-    color: #7289da;
-    border-radius: 3px;
+    color: #6377c2;
+    border-radius: 4px;
     border: none;
     line-height: 16px;
-    padding: 2px 16px;
+    padding: 2px 12px;
     cursor: pointer;
     transition: opacity .17s ease, color .17s ease, scale .05s ease;
 }
@@ -124,7 +125,7 @@ body {
 .listrow {
     display: flex;
     align-items: center;
-    line-height: 30px;
+    line-height: 40px;
     padding: 4px 11px;
     border-radius: 4px;
     margin: 1px 0 1px 8px;
@@ -132,8 +133,8 @@ body {
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     position: relative;
     background-position: 50%;
@@ -150,13 +151,13 @@ body {
 
 .servername {
     white-space: nowrap;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .invite-link {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 13px;
+    line-height: 16px;
     color: #b9bbbe;
 }
 
