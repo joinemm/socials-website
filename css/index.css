@@ -57,13 +57,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .toggle-box {
     display: flex;
     float: right;
-    margin: 10px;
 }
 
 .switch {
@@ -71,6 +70,8 @@ body {
     height: 34px;
     width: 60px;
     display: inline-block;
+    right: 30px;
+    top: 1px;
 }
 
 .switch input {
