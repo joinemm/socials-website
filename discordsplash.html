@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="css/discord.css">
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="js/discord.js"></script>
 
 <body>
 
@@ -32,26 +31,28 @@
             <div class="content">
                 <header class="header">
                     <div class="avatar">
-                        <img src="https://i.imgur.com/lmvBY48.png">
+                        <img id="AvatarImage" src="">
                     </div>
-                    <div class="userinfo">
-                        <div class="nametag" id="nametag">
-                            <span class="username" id="user">Joinemm</span>
-                            <span class="discriminator" id="disc">#7184</span>
+                    <div class=" userinfo ">
+                        <div class="nametag " id="nametag ">
+                            <span class="username " id="user"></span>
+                            <span class="discriminator " id="disc"></span>
                         </div>
                     </div>
-                    <button type="button" class="copybutton" onclick="copyToClipboard()">
-                    <div class="button-contents">Copy to Clipboard</div>
+                    <button type="button " class="copybutton " onclick="copyToClipboard() ">
+                    <div class="button-contents ">Copy to Clipboard</div>
                 </button>
                 </header>
-                <div class="headerfill">
-                    <div class="infoheader">Related Servers</div>
-                    <div class="servers">
-                        <div class="listrow">
-                            <div class="icon" style="background-image: url(https://cdn.discordapp.com/icons/652904322706833409/155dfd4ef6d392b66039350d213c4663.webp?size=1024);"></div>
-                            <div class="listrow-content">
-                                <div class="servername">Miso Bot™</div>
-                                <div class="invite-link"><a href="https://discord.gg/SCBaPFY">discord.gg/SCBaPFY</a></div>
+                <div class="headerfill ">
+                    <div class="infoheader ">Related Servers</div>
+                    <div class="servers ">
+                        <div class="listrow" , id="guild-652904322706833409">
+                            <div class="icon ">
+                                <img class="guild-icon" src="">
+                            </div>
+                            <div class="listrow-content ">
+                                <div class="servername "></div>
+                                <div class="invite-link "><a href="https://discord.gg/SCBaPFY ">discord.gg/SCBaPFY</a></div>
                             </div>
                         </div>
 
@@ -59,12 +60,13 @@
                 </div>
             </div>
         </div>
-        <footer id="footer-container">
-            <div class="footer">
+        <footer id="footer-container ">
+            <div class="footer ">
                 <small>— Copyright &copy; 2020 Joinemm —</small>
             </div>
         </footer>
     </div>
+    <script src="js/discord.js"></script>
 
 </body>
 
