@@ -15,15 +15,15 @@ function copyToClipboard() {
     }
 }
 
-function getDiscordData(userid) {
-    fetch("http://45.32.187.239:8080/userinfo?userid=" + userid)
+function getDiscordData() {
+    fetch("http://127.0.0.1:8080/discorduser")
         .then((response) => {
             return response.json()
         })
         .then((data) => {
             // Work with JSON data here
-            document.getElementById('AvatarImage').src = data['avatar'];
-            document.getElementById('user').innerHTML = data['name'];
+            document.getElementById('AvatarImage').src = "https://cdn.discordapp.com/avatars/" + data['id'] + "/" + data['avatar'];
+            document.getElementById('user').innerHTML = data['username'];
             document.getElementById('disc').innerHTML = "#" + data['discriminator'];
         })
         .catch((err) => {
@@ -47,5 +47,5 @@ function guildData(guildid) {
         })
 }
 
-getDiscordData("133311691852218378");
-guildData("652904322706833409");
+getDiscordData();
+//guildData("652904322706833409");
