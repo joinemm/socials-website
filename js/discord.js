@@ -1,3 +1,5 @@
+var apibase = "https://api.joinemm.dev"
+
 function copyToClipboard() {
     var text = document.getElementById("user").textContent + document.getElementById("disc").textContent;
     console.log(text);
@@ -16,7 +18,7 @@ function copyToClipboard() {
 }
 
 function getDiscordData() {
-    fetch("http://127.0.0.1:8080/discorduser")
+    fetch(apibase + "/discord/user")
         .then((response) => {
             return response.json()
         })
@@ -31,16 +33,18 @@ function getDiscordData() {
         })
 }
 
-function guildData(guildid) {
-    fetch("http://45.32.187.239:8080/guildinfo?guildid=" + guildid)
+function guildData() {
+    fetch(apibase + "/discord/user/guilds")
         .then((response) => {
             return response.json()
         })
         .then((data) => {
-            // Work with JSON data here
-            guild = document.getElementById('guild-' + guildid)
-            guild.getElementsByClassName("guild-icon")[0].src = data['icon'];
-            guild.getElementsByClassName("servername")[0].innerHTML = data['name'];
+            for (var i = 0; i < data.length; i++) {
+                // Work with JSON data here
+                guild = document.getElementById('guild-' + data[i]['id'])
+                guild.getElementsByClassName("guild-icon")[0].src = "https://cdn.discordapp.com/icons/" + data[i]['id'] + "/" + data[i]['icon'];
+                guild.getElementsByClassName("servername")[0].innerHTML = data[i]['name'];
+            }
         })
         .catch((err) => {
             console.log(err)
@@ -48,4 +52,4 @@ function guildData(guildid) {
 }
 
 getDiscordData();
-//guildData("652904322706833409");
+guildData();
