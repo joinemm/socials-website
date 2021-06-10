@@ -32,6 +32,13 @@
     </head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
+    <script>
+    function discordpopup() {
+        var popup = document.getElementById("discordPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
     <body>
         <div class="wrapper">
             <div id="header-container">
@@ -44,7 +51,7 @@
                 </div>
             </div>
             <div id="content-container">
-                <a class="icon-discord social-button color" href="discordsplash">
+                <a class="icon-discord social-button color popup" onclick="discordpopup()">
                     <svg aria-hidden="false" viewBox="0 0 71 55" class="fa-fw">
                         <path
                             fill="currentColor"
@@ -66,6 +73,7 @@
                             30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"
                         >
                     </svg>
+                    <span class="popuptext" id="discordPopup"><p>Joinemm#7184</p></span>
                 </a>
                 <a class="icon-github social-button color" href="https://github.com/joinemm">
                     <i class="fab fa-fw fa-github"></i>
@@ -103,7 +111,7 @@
             </div>
             <footer id="footer-container">
                 <div class="footer">
-                    <small>— Copyright &copy; 2020 Joinemm —</small>
+                    <small>— Copyright &copy; 2021 Joinemm —</small>
                 </div>
             </footer>
         </div>
