@@ -1,3 +1,1 @@
-# Personal website 
-
-https://joinemm.dev
+very simple website
